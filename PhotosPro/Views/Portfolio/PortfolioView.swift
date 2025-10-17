@@ -74,7 +74,7 @@ struct PortfolioView: View {
                             .padding(.horizontal, 20)
                         }
                         .padding(.bottom, 10)
-                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
+                        LazyVStack {
                             ForEach(filteredPortfolio) { item in
                                 NavigationLink {
                                     EditPortfolioView(portfolio: item)
